@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<script type="text/javascript">
+		var d = new Date();
+		
+		 var day = d.getDay();
+		 var month = d.getMonth();
+		 var year = d.getFullYear();
+		 var time = d.getHours();
+		 document.write("current Date Is :: " + day + "/" + month + "/" + year);
+		//document.write("date is" + d);
+		if(time >= 12 && time <= 12){
+			document.write("Good Morning");
+		}
+		else if(time >=12 && time <=24){
+			document.write("Good Night")
+		}
+		function message(a){
+			if(a === 12){
+				alert("Welcome To First JS" + a);
+			}
+			else {
+				alert ("It is not a number") 
+			}
+			
+			document.write("This is me fisrt java script programm");
+		}
+		
+		function acceptdata(){
+			var a = 123.44;
+			document.write("A is Number" + a);
+			var x = Number(prompt("Enter first Number"));
+			var y = Number(prompt("Enter Second Number"));
+			alert(x + y);
+		}
+			
+		</script>
+		<noscript>
+			Sorry...JavaScript is needed to go ahead.
+		</noscript>	
+	</head>
+	<body >
+		This is JS	
+		<input type="button" onclick="acceptdata()" value="Say Hello" />	
+	</body>
+</html>
